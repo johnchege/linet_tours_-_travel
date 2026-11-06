@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maasai Mara Deals | Linet Tours & Travel</title><link rel="stylesheet" href="styles.css">
+<style>
+.deals-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.deal-card img{height:190px}
+.deal-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:#718079}
+.deal-price{font-size:18px;font-weight:800;color:#123b31;margin:13px 0}
+.currency-bar{display:flex;align-items:center;gap:10px;margin:0 0 20px;color:#65736d;font-size:13px;flex-wrap:wrap}
+.currency-bar select{border:1px solid #dfe7e2;border-radius:4px;padding:9px;background:white;color:#123b31;font-weight:700}
+@media(max-width:850px){.deals-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.deals-grid{grid-template-columns:1fr}.deal-card img{height:210px}}
+</style></head><body>
+<div class="topbar"><div class="wrap topinner"><div><span>☎ +254 726 826 529</span><span>✉ johnc6816@gmail.com</span></div><div>Kenya • Wildlife safari</div></div></div>
+<header><div class="wrap nav"><a class="brand" href="index.html"><span class="logo">L</span><span>LINET TOURS & TRAVEL<small>EXPLORE • EXPERIENCE • ENJOY</small></span></a><nav class="links"><a href="index.html">Home</a><a class="active" href="tours.html">Tour Packages</a><a href="car-hire.html">Car Hire</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav><a class="navbtn" href="contact.html#booking">BOOK / ENQUIRE</a><button class="menu" aria-label="Open menu">☰</button></div></header>
+<main><div class="subhero"><div class="wrap"><div class="crumb"><a href="index.html">Home</a>　›　<a href="tours.html">Destinations</a>　›　Maasai Mara deals</div><h1>Maasai Mara Safari Deals</h1><p>Choose the safari duration and style that best suits your travel plans.</p></div></div>
+<section><div class="wrap"><div class="section-head"><div><div class="eyebrow">Choose your experience</div><h2>Three ways to explore the Mara</h2></div><p>These are package outlines. Final rates, accommodation, park fees and availability are confirmed in your personalised quotation.</p></div>
+<div class="currency-bar"><label for="currency">Request price in:</label><select id="currency"><option value="KES">Kenyan Shillings (KSh)</option><option value="USD">US Dollars (USD)</option></select><span id="currency-note">Final package price confirmed by quotation.</span></div>
+<div class="deals-grid">
+<article class="card deal-card"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85" alt="Safari vehicle on Maasai Mara plains" loading="lazy"><div class="cardbody"><span class="smalltag">Short safari</span><h3>3 Days Mara Safari</h3><p>A short wildlife escape with a planned journey to the reserve, guided game-drive opportunities and two nights at selected accommodation.</p><div class="deal-meta"><span>◷ 3 Days / 2 Nights</span><span>Safari transport options</span></div><p class="deal-price">Price on request</p><a class="btn" style="display:block;text-align:center" href="package-details.html?deal=mara-3day">VIEW PACKAGE</a></div></article>
+<article class="card deal-card"><img src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1000&q=85" alt="Wildlife in African savannah" loading="lazy"><div class="cardbody"><span class="smalltag">Classic safari</span><h3>4 Days Mara Adventure</h3><p>More time for game drives, relaxed lodge or camp stays and a fuller safari experience across the agreed Mara area.</p><div class="deal-meta"><span>◷ 4 Days / 3 Nights</span><span>Accommodation options</span></div><p class="deal-price">Price on request</p><a class="btn" style="display:block;text-align:center" href="package-details.html?deal=mara-4day">VIEW PACKAGE</a></div></article>
+<article class="card deal-card"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85" alt="African savannah landscape" loading="lazy"><div class="cardbody"><span class="smalltag">Extended safari</span><h3>5 Days Luxury Mara Safari</h3><p>An extended safari outline with additional time for wildlife viewing and a selected lodge or tented-camp experience.</p><div class="deal-meta"><span>◷ 5 Days / 4 Nights</span><span>Lodge or camp options</span></div><p class="deal-price">Price on request</p><a class="btn" style="display:block;text-align:center" href="package-details.html?deal=mara-5day">VIEW PACKAGE</a></div></article>
+</div><div class="cta"><div><h2>Need help choosing?</h2><p>Tell us your travel dates, number of guests and preferred accommodation level.</p></div><a class="btn" href="contact.html?service=Maasai%20Mara%20Safari#booking">ENQUIRE ABOUT THE MARA</a></div></div></section></main>
+<footer><div class="wrap"><div class="footgrid"><div><h3>Linet Tours & Travel</h3><p>Explore more, experience more. Get in touch to plan your next holiday, safari or car hire arrangement.</p></div><div><h3>Explore</h3><a href="tours.html">Tour Packages</a><a href="car-hire.html">Car Hire</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div><div><h3>Contact</h3><p>Phone / WhatsApp: +254 726 826 529</p><p>Email: johnc6816@gmail.com</p><a href="contact.html#booking">Send an Enquiry →</a></div></div><div class="copyright">© <span data-year></span> Linet Tours & Travel. All rights reserved.</div></div></footer><a class="whatsapp" href="https://wa.me/254726826529" target="_blank" rel="noopener">WhatsApp Us</a><script src="script.js"></script>
+<script>
+document.getElementById('currency').addEventListener('change',function(){
+document.getElementById('currency-note').textContent=this.value==='KES'?'Your quotation will be prepared in Kenyan shillings.':'Your quotation will be prepared in US dollars.';
+});
+</script></body></html>
