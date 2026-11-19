@@ -132,6 +132,70 @@ z-index:1000;
 .home-section{padding:42px 0}
 .home-card img{height:210px}
 }
+  
+/* MOBILE WHATSAPP BUTTON AND SECTION SPACING */
+@media(max-width:600px){
+
+  .home-section{
+    padding:48px 0 44px;
+  }
+
+  .home-heading{
+    margin-bottom:24px;
+    padding:0 4px;
+  }
+
+  .home-heading h2{
+    font-size:28px;
+    line-height:1.2;
+  }
+
+  .home-heading p{
+    font-size:14px;
+    line-height:1.65;
+  }
+
+  .home-feature{
+    gap:20px;
+  }
+
+  .home-feature img{
+    height:230px;
+    border-radius:12px;
+  }
+
+  .home-cards,
+  .home-services,
+  .home-quotes{
+    gap:18px;
+  }
+
+  .home-card-body{
+    padding:19px;
+  }
+
+  /* Compact floating WhatsApp button */
+  .whatsapp{
+    right:14px;
+    bottom:calc(14px + env(safe-area-inset-bottom, 0px));
+    width:50px;
+    height:50px;
+    padding:0;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    font-size:0;
+    line-height:1;
+  }
+
+  .whatsapp::before{
+    content:"WA";
+    font-size:14px;
+    font-weight:900;
+    letter-spacing:.3px;
+  }
+}
+
 </style>
 </head>
 
