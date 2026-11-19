@@ -68,6 +68,105 @@ color:white;
 .home-cta h2{font-size:27px}
 .home-heading h2{font-size:29px}
 }
+  
+/* MOBILE HOMEPAGE IMPROVEMENTS */
+@media (max-width:600px){
+
+  /* Compact contact bar */
+  .topbar .topinner{
+    padding:9px 0;
+    justify-content:center;
+  }
+
+  .topbar .topinner>div:first-child{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:10px;
+    font-size:11px;
+  }
+
+  .topbar .topinner>div:last-child{
+    display:none;
+  }
+
+  /* Better mobile navigation spacing */
+  .nav{
+    gap:9px;
+  }
+
+  .brand{
+    flex:1;
+    min-width:0;
+  }
+
+  .brand small{
+    font-size:8px;
+    letter-spacing:1.5px;
+  }
+
+  .navbtn{
+    padding:10px 11px;
+    font-size:11px;
+    max-width:105px;
+    text-align:center;
+  }
+
+  .menu{
+    padding:7px;
+  }
+
+  /* Shorter, more balanced hero */
+  .home-hero{
+    min-height:460px;
+  }
+
+  .home-hero .hero-content{
+    padding-top:45px;
+    padding-bottom:45px;
+  }
+
+  .home-hero h1{
+    font-size:clamp(36px,9vw,46px);
+    line-height:1.08;
+    margin:16px 0;
+  }
+
+  .home-hero p{
+    font-size:15px;
+    line-height:1.65;
+  }
+
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .hero-actions .btn{
+    margin:0;
+    padding:12px 15px;
+    font-size:12px;
+  }
+
+  /* Improve floating WhatsApp button */
+  .whatsapp{
+    right:12px;
+    bottom:18px;
+    padding:10px 14px;
+    font-size:12px;
+    z-index:1000;
+  }
+
+  /* Better mobile section spacing */
+  .home-section{
+    padding:42px 0;
+  }
+
+  .home-card img{
+    height:210px;
+  }
+}
+
 </style>
 </head>
 
