@@ -23,12 +23,14 @@ color:white;
 .home-hero h1{font:500 clamp(42px,7vw,72px) Georgia,serif;line-height:1.08;margin:20px 0}
 .home-hero p{font-size:17px;line-height:1.8;max-width:650px;color:#f1f1f1}
 .home-hero .btn{margin:8px 8px 0 0}
+
 .home-section{padding:65px 0}
 .home-section.alt-bg{background:#f5f8f6}
 .home-heading{text-align:center;max-width:750px;margin:0 auto 35px}
 .home-heading h2{font:500 35px Georgia,serif;color:#123b31;margin:10px 0}
 .home-heading p{color:#68766f;line-height:1.7}
 .home-label{color:#b18a39;font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+
 .home-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .home-card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 5px 22px rgba(0,0,0,.08)}
 .home-card img{width:100%;height:225px;object-fit:cover;display:block}
@@ -37,21 +39,25 @@ color:white;
 .home-card p{color:#68766f;line-height:1.7}
 .home-card .read{color:#987329;font-weight:bold;text-decoration:none}
 .home-card .read:hover{text-decoration:underline}
+
 .home-feature{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
 .home-feature img{width:100%;height:370px;object-fit:cover;border-radius:12px}
 .home-feature h2{font:500 36px Georgia,serif;color:#123b31}
 .home-feature p{line-height:1.8;color:#68766f}
 .home-checks{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:25px 0}
 .home-check{padding:13px;background:white;border-radius:8px;color:#29483c}
+
 .home-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .home-service{padding:25px;background:white;border:1px solid #e6ece7;border-radius:10px}
 .home-service .symbol{font-size:30px}
 .home-service h3{color:#123b31;margin:12px 0 8px}
 .home-service p{color:#68766f;line-height:1.7}
+
 .home-quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .home-quote{background:white;border:1px solid #e6ece7;border-radius:10px;padding:24px}
 .home-quote p{color:#52645a;line-height:1.8;font-style:italic}
 .home-quote strong{color:#123b31}
+
 .home-cta{background:linear-gradient(110deg,#103d31,#1d6049);border-radius:14px;padding:38px;color:white;display:flex;justify-content:space-between;align-items:center;gap:25px}
 .home-cta h2{font:500 32px Georgia,serif;margin:0 0 10px}
 .home-cta p{color:#e1eee7;line-height:1.7;margin:0}
@@ -71,75 +77,44 @@ color:white;
 }
 
 /* MOBILE HOMEPAGE IMPROVEMENTS */
-@media (max-width:600px){
-
+@media(max-width:600px){
 .topbar .topinner{
 padding:9px 0;
 justify-content:center;
 }
-
 .topbar .topinner>div:first-child{
 display:flex;
 flex-wrap:nowrap;
 gap:10px;
 font-size:11px;
 }
+.topbar .topinner>div:last-child{display:none}
 
-.topbar .topinner>div:last-child{
-display:none;
-}
-
-.nav{
-gap:9px;
-}
-
-.brand{
-flex:1;
-min-width:0;
-}
-
-.brand small{
-font-size:8px;
-letter-spacing:1.5px;
-}
-
+.nav{gap:9px}
+.brand{flex:1;min-width:0}
+.brand small{font-size:8px;letter-spacing:1.5px}
 .navbtn{
 padding:10px 11px;
 font-size:11px;
 max-width:105px;
 text-align:center;
 }
+.menu{padding:7px}
 
-.menu{
-padding:7px;
-}
-
-.home-hero{
-min-height:460px;
-}
-
-.home-hero .hero-content{
-padding-top:45px;
-padding-bottom:45px;
-}
-
+.home-hero{min-height:460px}
+.home-hero .hero-content{padding-top:45px;padding-bottom:45px}
 .home-hero h1{
 font-size:clamp(36px,9vw,46px);
 line-height:1.08;
 margin:16px 0;
 }
-
-.home-hero p{
-font-size:15px;
-line-height:1.65;
-}
+.home-hero p{font-size:15px;line-height:1.65}
 
 .hero-actions{
 display:flex;
 flex-wrap:wrap;
 gap:10px;
 }
-
 .hero-actions .btn{
 margin:0;
 padding:12px 15px;
@@ -154,13 +129,8 @@ font-size:12px;
 z-index:1000;
 }
 
-.home-section{
-padding:42px 0;
-}
-
-.home-card img{
-height:210px;
-}
+.home-section{padding:42px 0}
+.home-card img{height:210px}
 }
 </style>
 </head>
@@ -251,7 +221,7 @@ journeys worth remembering.
 
 <article class="home-card">
 <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85" alt="Dubai city skyline">
-<div class="cardbody">
+<div class="home-card-body">
 <span class="smalltag">INTERNATIONAL</span>
 <h3>Worldwide Holidays</h3>
 <p>Discover Dubai, Maldives, Mauritius, Cape Town, Bangkok and the Greek Islands.</p>
@@ -285,7 +255,6 @@ coastal escapes and vehicle hire services.
 <a class="btn" href="about.html">DISCOVER LINET TOURS</a>
 </div>
 
-<!-- UPDATED AFRICAN LANDSCAPE IMAGE -->
 <img src="https://images.unsplash.com/photo-1632864790429-9669f5c2ecd7?auto=format&fit=crop&w=1100&q=85" alt="African savannah landscape">
 </div>
 </section>
@@ -294,7 +263,6 @@ coastal escapes and vehicle hire services.
 <section class="home-section">
 <div class="wrap home-feature">
 
-<!-- UPDATED SAFARI LAND CRUISER IMAGE -->
 <img class="home-fleet-img" src="https://images.myguide-cdn.com/kenya/companies/4-days-small-group-safari-to-maasai-mara-l-nakuru-by-4wd/large/4-days-small-group-safari-to-maasai-mara-l-nakuru-by-4wd-4347914.jpg" alt="Safari four wheel drive vehicle">
 
 <div>
