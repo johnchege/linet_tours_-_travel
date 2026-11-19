@@ -196,6 +196,53 @@ z-index:1000;
   }
 }
 
+/* FINAL MOBILE REFINEMENTS */
+@media(max-width:600px){
+
+  /* Smaller WhatsApp button */
+  .whatsapp{
+    width:42px;
+    height:42px;
+    right:10px;
+    bottom:12px;
+    padding:0;
+    font-size:0;
+  }
+
+  .whatsapp::before{
+    font-size:12px;
+  }
+
+  /* More compact destination cards */
+  .home-card img{
+    height:185px;
+  }
+
+  .home-card-body{
+    padding:16px;
+  }
+
+  .home-card h3{
+    font-size:21px;
+    line-height:1.25;
+    margin:8px 0;
+  }
+
+  .home-card p{
+    font-size:14px;
+    line-height:1.6;
+    margin:8px 0 14px;
+  }
+
+  .home-card .read{
+    font-size:12px;
+  }
+
+  .home-cards{
+    gap:16px;
+  }
+}
+
 </style>
 </head>
 
