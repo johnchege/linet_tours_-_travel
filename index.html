@@ -1,12 +1,350 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Linet Tours & Travel — Kenya, East Africa and international holidays, plus car hire."><title>Home | Linet Tours & Travel</title><link rel="stylesheet" href="styles.css"></head><body>
-<div class="topbar"><div class="wrap topinner"><div><span>☎ +254 726 826 529</span><span>✉ johnc6816@gmail.com</span></div><div>Kenya • International Tours • Car Hire</div></div></div>
-<header><div class="wrap nav"><a class="brand" href="index.html"><span class="logo">L</span><span>LINET TOURS & TRAVEL<small>EXPLORE • EXPERIENCE • ENJOY</small></span></a><nav class="links"><a class="active" href="index.html">Home</a><a href="tours.html">Tour Packages</a><a href="car-hire.html">Car Hire</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></nav><a class="navbtn" href="contact.html#booking">BOOK / ENQUIRE</a><button class="menu" aria-label="Open menu">☰</button></div></header>
-<main><section class="hero"><div class="wrap hero-content"><div class="eyebrow">Your journey begins here</div><h1>Discover Kenya.<br>Explore the World.</h1><p>Plan unforgettable safaris, coastal escapes, East African adventures and international holidays with Linet Tours & Travel. We also offer a range of vehicle options for your travel needs.</p><div class="hero-actions"><a class="btn" href="tours.html">EXPLORE DESTINATIONS</a><a class="btn alt" href="contact.html#booking">PLAN YOUR TRIP</a></div></div></section>
-<section><div class="wrap"><div class="section-head"><div><div class="eyebrow">Travel inspiration</div><h2>Where Would You Like to Go?</h2></div><p>From local getaways to international holidays, tell us what you have in mind and request a tailored quotation.</p></div><div class="grid3">
-<article class="card"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80" alt="Kenya safari"><div class="cardbody"><span class="smalltag">Kenya</span><h3>Safari Adventures</h3><p>Explore Maasai Mara, Amboseli, Tsavo, Samburu and more.</p><a class="read" href="tours.html">EXPLORE KENYA →</a></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Island holiday"><div class="cardbody"><span class="smalltag">East Africa</span><h3>Regional Getaways</h3><p>Discover Zanzibar, Serengeti and Rwanda on a planned trip.</p><a class="read" href="tours.html">EXPLORE EAST AFRICA →</a></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubai skyline"><div class="cardbody"><span class="smalltag">Worldwide</span><h3>International Holidays</h3><p>Ask about Dubai, Maldives, Mauritius, Cape Town and more.</p><a class="read" href="tours.html">EXPLORE WORLDWIDE →</a></div></article>
-</div></div></section>
-<section style="background:#f5f8f6"><div class="wrap grid2"><div><div class="eyebrow">Travel with flexibility</div><h2 style="font:500 36px Georgia;color:#123b31">The right vehicle for your journey</h2><p class="muted">Choose from saloon cars, family vehicles, SUVs, safari vehicles and group transport. Vehicle rates and availability are confirmed when you enquire.</p><a class="btn" href="car-hire.html">VIEW OUR VEHICLE FLEET</a></div><img class="feature" src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=80" alt="SUV vehicle"></div></section>
-<section><div class="wrap"><div class="cta"><div><h2>Ready to plan your next journey?</h2><p>Share your destination, travel dates and group size to request a quotation.</p></div><a class="btn" href="contact.html#booking">MAKE AN ENQUIRY</a></div></div></section></main>
-<footer><div class="wrap"><div class="footgrid"><div><h3>Linet Tours & Travel</h3><p>Explore more, experience more. Get in touch to plan your next holiday, safari or car hire arrangement.</p></div><div><h3>Explore</h3><a href="tours.html">Tour Packages</a><a href="car-hire.html">Car Hire</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div><div><h3>Contact</h3><p>Phone / WhatsApp: +254 726 826 529</p><p>Email: johnc6816@gmail.com</p><a href="contact.html#booking">Send an Enquiry →</a></div></div><div class="copyright">© <span data-year></span> Linet Tours & Travel. All rights reserved.</div></div></footer><a class="whatsapp" href="https://wa.me/254726826529" target="_blank" rel="noopener">WhatsApp Us</a><script src="script.js"></script></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Discover Kenya, East Africa and worldwide holidays with Linet Tours & Travel. Safaris, beach holidays, international tours and car hire.">
+<title>Linet Tours & Travel | Explore Kenya and the World</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* HOMEPAGE ENHANCEMENTS */
+.home-hero{
+min-height:570px;
+display:flex;
+align-items:center;
+background:linear-gradient(90deg,rgba(5,35,28,.88),rgba(5,35,28,.35)),
+url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85') center/cover;
+color:white;
+}
+.home-hero .hero-content{max-width:760px;padding-top:65px;padding-bottom:65px}
+.home-hero .eyebrow{color:#e8c878;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+.home-hero h1{font:500 clamp(42px,7vw,72px) Georgia,serif;line-height:1.08;margin:20px 0}
+.home-hero p{font-size:17px;line-height:1.8;max-width:650px;color:#f1f1f1}
+.home-hero .btn{margin:8px 8px 0 0}
+.home-section{padding:65px 0}
+.home-section.alt-bg{background:#f5f8f6}
+.home-heading{text-align:center;max-width:750px;margin:0 auto 35px}
+.home-heading h2{font:500 35px Georgia,serif;color:#123b31;margin:10px 0}
+.home-heading p{color:#68766f;line-height:1.7}
+.home-label{color:#b18a39;font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+.home-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.home-card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 5px 22px rgba(0,0,0,.08)}
+.home-card img{width:100%;height:225px;object-fit:cover;display:block}
+.home-card-body{padding:22px}
+.home-card h3{font:500 23px Georgia,serif;color:#123b31;margin:10px 0}
+.home-card p{color:#68766f;line-height:1.7}
+.home-card .read{color:#987329;font-weight:bold;text-decoration:none}
+.home-card .read:hover{text-decoration:underline}
+.home-feature{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.home-feature img{width:100%;height:370px;object-fit:cover;border-radius:12px}
+.home-feature h2{font:500 36px Georgia,serif;color:#123b31}
+.home-feature p{line-height:1.8;color:#68766f}
+.home-checks{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:25px 0}
+.home-check{padding:13px;background:white;border-radius:8px;color:#29483c}
+.home-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.home-service{padding:25px;background:white;border:1px solid #e6ece7;border-radius:10px}
+.home-service .symbol{font-size:30px}
+.home-service h3{color:#123b31;margin:12px 0 8px}
+.home-service p{color:#68766f;line-height:1.7}
+.home-quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.home-quote{background:white;border:1px solid #e6ece7;border-radius:10px;padding:24px}
+.home-quote p{color:#52645a;line-height:1.8;font-style:italic}
+.home-quote strong{color:#123b31}
+.home-cta{background:linear-gradient(110deg,#103d31,#1d6049);border-radius:14px;padding:38px;color:white;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.home-cta h2{font:500 32px Georgia,serif;margin:0 0 10px}
+.home-cta p{color:#e1eee7;line-height:1.7;margin:0}
+.home-cta .btn{background:#d5ae5c;color:#163b30}
+.home-fleet-img{object-position:center}
+@media(max-width:750px){
+.home-hero{min-height:520px}
+.home-hero .hero-content{padding-top:45px;padding-bottom:45px}
+.home-cards,.home-services,.home-quotes{grid-template-columns:1fr}
+.home-feature{grid-template-columns:1fr;gap:25px}
+.home-feature img{height:260px}
+.home-checks{grid-template-columns:1fr}
+.home-cta{flex-direction:column;align-items:flex-start;padding:27px}
+.home-cta h2{font-size:27px}
+.home-heading h2{font-size:29px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+<div class="wrap topinner">
+<div>
+<span>☎ +254 726 826 529</span>
+<span>✉ johnc6816@gmail.com</span>
+</div>
+<div>Kenya • East Africa • Worldwide • Car Hire</div>
+</div>
+</div>
+
+<header>
+<div class="wrap nav">
+<a class="brand" href="index.html">
+<span class="logo">L</span>
+<span>LINET TOURS & TRAVEL
+<small>EXPLORE • EXPERIENCE • ENJOY</small>
+</span>
+</a>
+
+<nav class="links">
+<a class="active" href="index.html">Home</a>
+<a href="tours.html">Tour Packages</a>
+<a href="car-hire.html">Car Hire</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<a class="navbtn" href="contact.html#booking">BOOK / ENQUIRE</a>
+<button class="menu" aria-label="Open menu">☰</button>
+</div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="home-hero">
+<div class="wrap hero-content">
+<div class="eyebrow">Your journey begins with us</div>
+<h1>Discover Kenya.<br>Experience the World.</h1>
+<p>
+From unforgettable African safaris and beautiful coastal holidays
+to international adventures, Linet Tours & Travel helps you plan
+journeys worth remembering.
+</p>
+<div class="hero-actions">
+<a class="btn" href="tours.html">EXPLORE DESTINATIONS</a>
+<a class="btn alt" href="contact.html#booking">PLAN YOUR JOURNEY</a>
+</div>
+</div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="home-section">
+<div class="wrap">
+<div class="home-heading">
+<div class="home-label">Explore the possibilities</div>
+<h2>Discover Your Next Destination</h2>
+<p>Explore memorable holidays across Kenya, East Africa and international destinations.</p>
+</div>
+
+<div class="home-cards">
+
+<article class="home-card">
+<img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=85" alt="African safari landscape">
+<div class="home-card-body">
+<span class="smalltag">KENYA</span>
+<h3>Kenya Safari Adventures</h3>
+<p>Discover Maasai Mara, Amboseli, Samburu, Tsavo and Kenya's beautiful landscapes.</p>
+<a class="read" href="tours.html">EXPLORE KENYA →</a>
+</div>
+</article>
+
+<article class="home-card">
+<img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=85" alt="Tropical island beach">
+<div class="home-card-body">
+<span class="smalltag">EAST AFRICA</span>
+<h3>Regional Escapes</h3>
+<p>Experience Zanzibar, Serengeti, Rwanda and other East African destinations.</p>
+<a class="read" href="tours.html">EXPLORE EAST AFRICA →</a>
+</div>
+</article>
+
+<article class="home-card">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85" alt="Dubai city skyline">
+<div class="home-card-body">
+<span class="smalltag">INTERNATIONAL</span>
+<h3>Worldwide Holidays</h3>
+<p>Discover Dubai, Maldives, Mauritius, Cape Town, Bangkok and the Greek Islands.</p>
+<a class="read" href="tours.html">EXPLORE WORLDWIDE →</a>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="home-section alt-bg">
+<div class="wrap home-feature">
+<div>
+<div class="home-label">Travel with confidence</div>
+<h2>Your Journey. Your Experience. Our Commitment.</h2>
+<p>
+At Linet Tours & Travel, we help travellers explore destinations
+through thoughtfully planned holidays, safari experiences,
+coastal escapes and vehicle hire services.
+</p>
+
+<div class="home-checks">
+<div class="home-check">✓ Local and international tours</div>
+<div class="home-check">✓ Flexible travel arrangements</div>
+<div class="home-check">✓ Personalised enquiries</div>
+<div class="home-check">✓ Vehicle hire options</div>
+</div>
+
+<a class="btn" href="about.html">DISCOVER LINET TOURS</a>
+</div>
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1100&q=85" alt="Beautiful mountain travel landscape">
+</div>
+</section>
+
+<!-- CAR HIRE -->
+<section class="home-section">
+<div class="wrap home-feature">
+<img class="home-fleet-img" src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1100&q=85" alt="Travel SUV vehicle">
+
+<div>
+<div class="home-label">Comfort on every journey</div>
+<h2>The Right Vehicle for Your Travel Needs</h2>
+<p>
+Whether you need a saloon car, family vehicle, SUV,
+safari Land Cruiser or group transport, explore our fleet
+and enquire about the vehicle that suits your journey.
+</p>
+<p>
+Vehicle rates and availability are confirmed when you enquire.
+</p>
+<a class="btn" href="car-hire.html">EXPLORE OUR FLEET</a>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="home-section alt-bg">
+<div class="wrap">
+<div class="home-heading">
+<div class="home-label">What we offer</div>
+<h2>Travel Services</h2>
+<p>Travel planning and transport options for different journeys and occasions.</p>
+</div>
+
+<div class="home-services">
+<div class="home-service">
+<div class="symbol">🦁</div>
+<h3>Safari Holidays</h3>
+<p>Explore wildlife destinations and discover the beauty of Africa.</p>
+</div>
+
+<div class="home-service">
+<div class="symbol">🏝️</div>
+<h3>Beach Holidays</h3>
+<p>Enjoy coastal escapes and beautiful island destinations.</p>
+</div>
+
+<div class="home-service">
+<div class="symbol">✈️</div>
+<h3>International Tours</h3>
+<p>Plan holidays to exciting destinations around the world.</p>
+</div>
+
+<div class="home-service">
+<div class="symbol">🚙</div>
+<h3>Car Hire</h3>
+<p>Choose from our available vehicles for your travel requirements.</p>
+</div>
+
+<div class="home-service">
+<div class="symbol">👨‍👩‍👧‍👦</div>
+<h3>Family Holidays</h3>
+<p>Request travel arrangements suited to families and groups.</p>
+</div>
+
+<div class="home-service">
+<div class="symbol">🧭</div>
+<h3>Customised Tours</h3>
+<p>Share your interests and request a personalised travel itinerary.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="home-section">
+<div class="wrap">
+<div class="home-heading">
+<div class="home-label">Your experience matters</div>
+<h2>Making Every Journey Memorable</h2>
+<p>We look forward to helping you plan your next adventure.</p>
+</div>
+
+<div class="home-quotes">
+<div class="home-quote">
+<p>“We look forward to welcoming you and helping you plan a memorable travel experience.”</p>
+<strong>Linet Tours & Travel</strong>
+</div>
+
+<div class="home-quote">
+<p>“From safari adventures to international holidays, let us help you explore more.”</p>
+<strong>Linet Tours & Travel</strong>
+</div>
+
+<div class="home-quote">
+<p>“Your next journey starts with a conversation. Tell us where you would like to go.”</p>
+<strong>Linet Tours & Travel</strong>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="home-section">
+<div class="wrap">
+<div class="home-cta">
+<div>
+<h2>Ready for Your Next Adventure?</h2>
+<p>Tell us your destination, travel dates and group size. Request a personalised quotation today.</p>
+</div>
+<a class="btn" href="contact.html#booking">MAKE AN ENQUIRY</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<div class="footgrid">
+
+<div>
+<h3>Linet Tours & Travel</h3>
+<p>EXPLORE • EXPERIENCE • ENJOY</p>
+<p>Kenya • East Africa • Worldwide</p>
+<p>Plan your next holiday, safari or car hire arrangement with us.</p>
+</div>
+
+<div>
+<h3>Explore</h3>
+<a href="index.html">Home</a>
+<a href="tours.html">Tour Packages</a>
+<a href="car-hire.html">Car Hire</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>Phone / WhatsApp: +254 726 826 529</p>
+<p>Email: johnc6816@gmail.com</p>
+<a href="contact.html#booking">Send an Enquiry →</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© <span data-year></span> Linet Tours & Travel. All rights reserved.
+</div>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254726826529" target="_blank" rel="noopener">WhatsApp Us</a>
+
+<script src="script.js"></script>
+</body>
+</html>
