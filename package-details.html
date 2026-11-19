@@ -1,30 +1,153 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Explore personalised holiday and safari packages from Linet Tours & Travel.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore personalised safari and holiday packages from Linet Tours & Travel.">
 <title>Holiday Package | Linet Tours & Travel</title>
 <link rel="stylesheet" href="styles.css">
 
 <style>
-.package-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.8fr);gap:26px;align-items:start}
-.package-hero{width:100%;height:340px;object-fit:cover;border-radius:6px}
-.package-panel{background:#f5f8f6;border:1px solid #e5ece8;border-radius:6px;padding:20px;position:sticky;top:95px}
-.package-panel select{padding:10px;border:1px solid #dfe7e2;border-radius:4px;background:#fff;width:100%;margin:8px 0 14px}
-.package-copy{color:#65736d;line-height:1.8;font-size:14px}
-.package-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
-.package-gallery img{width:100%;height:125px;object-fit:cover;border-radius:4px}
-.package-day{background:#f5f8f6;border-left:3px solid #19835f;padding:13px 15px;margin:10px 0;color:#65736d;line-height:1.65;border-radius:0 5px 5px 0}
-.package-day strong{display:block;color:#173d32;margin-bottom:4px}
-.package-list{color:#65736d;line-height:1.9;font-size:14px;padding-left:20px}
-.package-actions{display:grid;gap:10px;margin-top:12px}
-.package-actions a{display:block;text-align:center;text-decoration:none;padding:13px;border-radius:4px;font-weight:800;font-size:12px}
-.back-deals{border:1px solid #16835d;color:#16835d}
-.whatsapp-package{background:#16835d;color:#fff}
-@media(max-width:900px){.package-layout{grid-template-columns:1fr}.package-panel{position:static}.package-hero{height:270px}}
-@media(max-width:600px){.package-hero{height:220px}.package-gallery img{height:100px}.package-day{font-size:14px;padding:11px 13px}}
+.package-layout {
+  display: grid;
+  grid-template-columns: minmax(0,1.55fr) minmax(260px,.8fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.package-hero {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.package-gallery {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin-top: 13px;
+}
+
+.package-gallery img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.package-panel {
+  background: #f5f8f6;
+  border: 1px solid #e5ece8;
+  border-radius: 6px;
+  padding: 21px;
+  position: sticky;
+  top: 95px;
+}
+
+.package-panel select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce5df;
+  border-radius: 4px;
+  background: white;
+  margin: 8px 0 15px;
+}
+
+.package-copy {
+  color: #65736d;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.package-day {
+  background: #f5f8f6;
+  border-left: 4px solid #19835f;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 0 5px 5px 0;
+  color: #65736d;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.package-day strong {
+  display: block;
+  color: #173d32;
+  margin-bottom: 5px;
+}
+
+.package-list {
+  color: #65736d;
+  font-size: 14px;
+  line-height: 1.9;
+  padding-left: 20px;
+}
+
+.category-note {
+  background: #f5f8f6;
+  border-left: 4px solid #19835f;
+  padding: 14px;
+  color: #52635b;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+.package-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.package-actions a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.whatsapp-package {
+  background: #16835d;
+  color: white;
+}
+
+.back-deals {
+  border: 1px solid #16835d;
+  color: #16835d;
+}
+
+@media(max-width:900px) {
+  .package-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .package-panel {
+    position: static;
+  }
+
+  .package-hero {
+    height: 270px;
+  }
+}
+
+@media(max-width:600px) {
+  .package-hero {
+    height: 220px;
+  }
+
+  .package-gallery img {
+    height: 95px;
+  }
+
+  .package-panel {
+    padding: 16px;
+  }
+}
 </style>
 </head>
 
@@ -32,17 +155,25 @@
 
 <div class="topbar">
   <div class="wrap topinner">
-    <div><span>☎ +254 726 826 529</span><span>✉ johnc6816@gmail.com</span></div>
+    <div>
+      <span>☎ +254 726 826 529</span>
+      <span>✉ johnc6816@gmail.com</span>
+    </div>
     <div>Kenya • East Africa • Worldwide</div>
   </div>
 </div>
 
 <header>
   <div class="wrap nav">
+
     <a class="brand" href="index.html">
       <span class="logo">L</span>
-      <span>LINET TOURS &amp; TRAVEL<small>EXPLORE • EXPERIENCE • ENJOY</small></span>
+      <span>
+        LINET TOURS &amp; TRAVEL
+        <small>EXPLORE • EXPERIENCE • ENJOY</small>
+      </span>
     </a>
+
     <nav class="links">
       <a href="index.html">Home</a>
       <a class="active" href="tours.html">Tour Packages</a>
@@ -50,21 +181,28 @@
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact</a>
     </nav>
+
     <a class="navbtn" href="contact.html#booking">BOOK / ENQUIRE</a>
     <button class="menu" aria-label="Open menu">☰</button>
+
   </div>
 </header>
 
 <main>
+
   <div class="subhero">
     <div class="wrap">
+
       <div class="crumb">
         <a href="index.html">Home</a>　›　
         <a href="tours.html">Destinations</a>　›　
-        <a id="breadcrumb-deals" href="tours.html">Destination deals</a>　›　Package
+        <a id="breadcrumb-deals" href="tours.html">Packages</a>　›　
+        Details
       </div>
+
       <h1 id="package-title">Holiday Package</h1>
-      <p id="package-subtitle">Discover your next experience with Linet Tours &amp; Travel.</p>
+      <p id="package-subtitle"></p>
+
     </div>
   </div>
 
@@ -72,93 +210,163 @@
     <div class="wrap package-layout">
 
       <div>
-        <img id="package-photo" class="package-hero" src="" alt="Holiday destination">
+
+        <img
+          id="package-photo"
+          class="package-hero"
+          src=""
+          alt="Holiday destination"
+        >
 
         <div class="package-gallery">
-          <img id="gallery-one" src="" alt="Destination experience">
-          <img id="gallery-two" src="" alt="Destination scenery">
-          <img id="gallery-three" src="" alt="Holiday activities">
+          <img id="gallery-one" src="" alt="Destination scenery">
+          <img id="gallery-two" src="" alt="Destination experience">
+          <img id="gallery-three" src="" alt="Local attraction">
         </div>
 
-        <div style="margin-top:25px">
-          <div class="eyebrow">Package overview</div>
-          <h2>About this experience</h2>
+        <div style="margin-top:28px">
+
+          <div class="eyebrow">PACKAGE OVERVIEW</div>
+
+          <h2>About This Experience</h2>
+
           <p id="package-description" class="package-copy"></p>
+
+          <div class="category-note" id="travel-category"></div>
+
         </div>
 
-        <div style="margin-top:25px">
-          <div class="eyebrow">Suggested itinerary</div>
-          <h2>Day-by-day plan</h2>
+        <div style="margin-top:30px">
+
+          <div class="eyebrow">YOUR HOLIDAY PLAN</div>
+
+          <h2>Day-by-Day Itinerary</h2>
+
           <p class="package-copy">
-            This is a suggested itinerary. The actual schedule, accommodation,
-            transport, activities and other arrangements will be confirmed
-            in your personalised quotation.
+            The itinerary below is a suggested programme.
+            The final schedule, accommodation, transport,
+            activities and timings will be agreed in your
+            personalised quotation.
           </p>
+
           <div id="package-itinerary"></div>
+
         </div>
 
-        <div style="margin-top:25px">
-          <div class="eyebrow">Package information</div>
-          <h2>May be included when quoted</h2>
+        <div style="margin-top:30px">
+
+          <div class="eyebrow">PACKAGE INFORMATION</div>
+
+          <h2>May Be Included When Quoted</h2>
+
           <ul class="package-list">
-            <li>Transport as specified in the quotation</li>
-            <li>Accommodation as selected and confirmed</li>
-            <li>Activities and guiding where listed</li>
-            <li>Meals, park fees and entrance fees only where expressly stated</li>
+            <li>Transport as specified in the quotation.</li>
+            <li>Accommodation as selected and confirmed.</li>
+            <li>Activities and guiding where listed.</li>
+            <li>Meals, park fees and entrance fees only where stated.</li>
+            <li>Transfers where expressly included.</li>
           </ul>
 
-          <h2>Not included unless stated</h2>
+          <h2>Not Included Unless Stated</h2>
+
           <ul class="package-list">
-            <li>Personal expenses and optional activities</li>
-            <li>Travel insurance</li>
-            <li>Flights and transfers unless specified</li>
-            <li>Any item not listed in the final quotation</li>
+            <li>Personal expenses and optional activities.</li>
+            <li>Travel insurance.</li>
+            <li>Flights, visas and transfers unless specified.</li>
+            <li>Items not listed in the final quotation.</li>
           </ul>
+
         </div>
+
       </div>
 
       <aside class="package-panel">
-        <span class="smalltag">Personalised holiday</span>
-        <h2>Package quotation</h2>
+
+        <span class="smalltag" id="category-tag">
+          Personalised Holiday
+        </span>
+
+        <h2>Package Quotation</h2>
 
         <label for="currency">Request price in:</label>
+
         <select id="currency">
           <option value="KES">Kenyan Shillings (KSh)</option>
           <option value="USD">US Dollars (USD)</option>
         </select>
 
-        <p class="deal-price" id="price">Price on request</p>
+        <h3>Price: On request</h3>
+
         <p class="package-copy" id="currency-note">
           Your quotation will be prepared in Kenyan shillings.
         </p>
 
-        <p><strong>Destination:</strong> <span id="destination-name"></span></p>
-        <p><strong>Duration:</strong> <span id="duration"></span></p>
-        <p><strong>Package:</strong> <span id="package-type"></span></p>
+        <p>
+          <strong>Destination:</strong>
+          <span id="destination-name"></span>
+        </p>
+
+        <p>
+          <strong>Duration:</strong>
+          <span id="duration"></span>
+        </p>
+
+        <p>
+          <strong>Package:</strong>
+          <span id="package-type"></span>
+        </p>
 
         <div class="package-actions">
-          <a class="btn" id="enquire" href="contact.html#booking">ENQUIRE NOW</a>
-          <a class="whatsapp-package" id="whatsapp-enquire" href="https://wa.me/254726826529" target="_blank" rel="noopener">ENQUIRE ON WHATSAPP</a>
-          <a class="back-deals" id="back-deals" href="tours.html">BACK TO DESTINATION DEALS</a>
+
+          <a class="btn" id="enquire" href="contact.html#booking">
+            ENQUIRE NOW
+          </a>
+
+          <a
+            class="whatsapp-package"
+            id="whatsapp-enquire"
+            href="https://wa.me/254726826529"
+            target="_blank"
+            rel="noopener"
+          >
+            ENQUIRE ON WHATSAPP
+          </a>
+
+          <a
+            class="back-deals"
+            id="back-deals"
+            href="tours.html"
+          >
+            BACK TO DESTINATION DEALS
+          </a>
+
         </div>
 
-        <p class="package-copy" style="font-size:11px;margin-top:14px">
-          No booking is confirmed until the itinerary, price and availability
-          have been agreed.
+        <p class="package-copy" style="font-size:11px;margin-top:15px">
+          No booking is confirmed until the itinerary,
+          price and availability have been agreed.
         </p>
+
       </aside>
 
     </div>
   </section>
+
 </main>
 
 <footer>
   <div class="wrap">
+
     <div class="footgrid">
+
       <div>
         <h3>Linet Tours &amp; Travel</h3>
-        <p>Explore more, experience more. Get in touch to plan your next holiday, safari or car hire arrangement.</p>
+        <p>
+          Explore more, experience more. Get in touch to
+          plan your next holiday, safari or car hire arrangement.
+        </p>
       </div>
+
       <div>
         <h3>Explore</h3>
         <a href="tours.html">Tour Packages</a>
@@ -166,547 +374,296 @@
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
       </div>
+
       <div>
         <h3>Contact</h3>
         <p>Phone / WhatsApp: +254 726 826 529</p>
         <p>Email: johnc6816@gmail.com</p>
-        <a href="contact.html#booking">Send an Enquiry →</a>
+        <a href="contact.html#booking">Send an Enquiry</a>
       </div>
+
     </div>
+
     <div class="copyright">
-      © <span data-year></span> Linet Tours &amp; Travel. All rights reserved.
+      © <span id="current-year"></span>
+      Linet Tours &amp; Travel. All rights reserved.
     </div>
+
   </div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/254726826529" target="_blank" rel="noopener">WhatsApp Us</a>
+<a
+  class="whatsapp"
+  href="https://wa.me/254726826529"
+  target="_blank"
+  rel="noopener"
+>
+  WhatsApp Us
+</a>
 
 <script src="script.js"></script>
+<script src="destination-data.js"></script>
 
 <script>
-const destinations = {
-  "maasai-mara": {
-    name:"Maasai Mara",
-    region:"Kenya",
-    image:"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Experience the world-famous Maasai Mara ecosystem, its open savannah, wildlife and memorable safari scenery. Your final accommodation, transport arrangements and activities will be selected and confirmed in your quotation.",
-    activities:[
-      "Travel to the Maasai Mara, arrive at your selected camp or lodge and take an afternoon game drive if timing and park access allow.",
-      "Enjoy planned morning and afternoon game-drive opportunities with your guide, with breaks arranged around the day's route.",
-      "Explore another agreed area of the reserve or conservancy.",
-      "Continue wildlife viewing or enjoy a relaxed day at your selected accommodation.",
-      "Have breakfast and begin your return journey."
-    ]
+const packageOptions = {
+  "3day": {
+    type: "Short Escape",
+    duration: "3 Days / 2 Nights",
+    count: 3
   },
 
-  "amboseli": {
-    name:"Amboseli National Park",
-    region:"Kenya",
-    image:"https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Discover Amboseli's wildlife, open plains and beautiful views of Mount Kilimanjaro. Enjoy a suggested safari experience with time for wildlife viewing and relaxation.",
-    activities:[
-      "Travel to Amboseli, check in at your selected accommodation and enjoy an afternoon activity if time permits.",
-      "Enjoy a planned morning game drive and explore the park's wildlife and landscapes.",
-      "Continue with a guided wildlife-viewing experience and time to relax.",
-      "Enjoy another agreed safari activity or a relaxed stay at the lodge.",
-      "Have breakfast and return to your starting point."
-    ]
+  "4day": {
+    type: "Classic Experience",
+    duration: "4 Days / 3 Nights",
+    count: 4
   },
 
-  "great-rift-valley": {
-    name:"Great Rift Valley",
-    region:"Kenya",
-    image:"https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Enjoy a scenic Kenyan getaway featuring the Great Rift Valley's landscapes, viewpoints, lakes and relaxing accommodation. The route and activities can be tailored to your interests.",
-    activities:[
-      "Depart for the Rift Valley and enjoy scenic stops along the route.",
-      "Explore selected viewpoints, lakes or nearby attractions.",
-      "Enjoy leisure time and optional activities arranged in advance.",
-      "Discover another selected attraction or enjoy a relaxed day.",
-      "Have breakfast and return home."
-    ]
-  },
-
-  "diani-mombasa": {
-    name:"Diani & Mombasa",
-    region:"Kenya Coast",
-    image:"https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Enjoy a Kenyan coastal holiday with beach relaxation, ocean scenery and selected attractions around Diani and Mombasa. Your accommodation and optional excursions can be customised.",
-    activities:[
-      "Travel to the coast and check in at your selected hotel or resort.",
-      "Enjoy a beach day and optional coastal activities.",
-      "Explore selected Mombasa or Diani attractions.",
-      "Enjoy more leisure time or a pre-arranged excursion.",
-      "Have breakfast and depart."
-    ]
-  },
-
-  "samburu": {
-    name:"Samburu",
-    region:"Northern Kenya",
-    image:"https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Explore northern Kenya's distinctive landscapes and wildlife. This safari experience can include selected game drives, accommodation and cultural experiences where available.",
-    activities:[
-      "Travel to Samburu and settle into your selected accommodation.",
-      "Enjoy a guided wildlife-viewing experience in the reserve.",
-      "Explore more of the agreed safari area and enjoy time at camp.",
-      "Enjoy another planned activity or a relaxed lodge experience.",
-      "Have breakfast and begin your return journey."
-    ]
-  },
-
-  "watamu-malindi": {
-    name:"Watamu & Malindi",
-    region:"Kenya Coast",
-    image:"https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Discover the Kenyan coast through beach relaxation, marine experiences and attractions around Watamu and Malindi. Optional excursions can be included in your personalised quotation.",
-    activities:[
-      "Travel to Watamu or Malindi and check in at your selected accommodation.",
-      "Enjoy beach time and explore the local coastal surroundings.",
-      "Consider a marine or cultural excursion subject to availability.",
-      "Enjoy another day of relaxation or selected activities.",
-      "Have breakfast and depart."
-    ]
-  },
-
-  "tsavo": {
-    name:"Tsavo National Parks",
-    region:"Kenya",
-    image:"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Experience the vast landscapes of Tsavo with a suggested safari featuring wildlife-viewing opportunities and time in the selected park area.",
-    activities:[
-      "Travel to Tsavo and check in at your selected lodge or camp.",
-      "Enjoy a planned game drive and explore the park's scenery.",
-      "Continue wildlife viewing in the agreed park area.",
-      "Enjoy another safari activity or time at the lodge.",
-      "Have breakfast and return to your starting point."
-    ]
-  },
-
-  "lake-nakuru": {
-    name:"Lake Nakuru",
-    region:"Kenya",
-    image:"https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Enjoy a scenic safari getaway around Lake Nakuru, with opportunities for wildlife viewing and exploring the surrounding landscapes.",
-    activities:[
-      "Travel to Lake Nakuru and check in at your selected accommodation.",
-      "Enjoy a planned visit to the park and wildlife-viewing opportunities.",
-      "Explore more of the area or enjoy a scenic excursion.",
-      "Enjoy a relaxed day or another selected activity.",
-      "Have breakfast and return home."
-    ]
-  },
-
-  "tailor-made-kenya": {
-    name:"Tailor-made Kenya Tours",
-    region:"Kenya",
-    image:"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Create a personalised Kenya holiday combining safari destinations, coast experiences, scenic attractions and accommodation according to your interests and travel plans.",
-    activities:[
-      "Meet your travel plan and begin the agreed journey.",
-      "Explore your first selected destination and activities.",
-      "Continue to another destination or enjoy your selected experiences.",
-      "Enjoy additional sightseeing, relaxation or activities.",
-      "Complete your holiday and return to your departure point."
-    ]
-  },
-
-  "serengeti": {
-    name:"Serengeti",
-    region:"Tanzania",
-    image:"https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Discover Tanzania's celebrated Serengeti landscapes through a suggested safari with wildlife-viewing opportunities and selected accommodation.",
-    activities:[
-      "Arrive in the Serengeti area and settle into your selected camp or lodge.",
-      "Enjoy a guided game drive in the agreed safari area.",
-      "Continue exploring the Serengeti with planned wildlife-viewing activities.",
-      "Enjoy additional safari time or relaxation at camp.",
-      "Have breakfast and depart according to your travel arrangements."
-    ]
-  },
-
-  "zanzibar": {
-    name:"Zanzibar",
-    region:"Tanzania",
-    image:"https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Enjoy a Zanzibar island escape featuring coastal scenery, beach relaxation and optional cultural experiences. Your hotel and excursions can be selected to suit your holiday.",
-    activities:[
-      "Arrive in Zanzibar and transfer to your selected accommodation.",
-      "Enjoy beach relaxation and explore the surrounding area.",
-      "Discover selected cultural or island attractions.",
-      "Enjoy optional excursions or another relaxing beach day.",
-      "Check out and depart according to your travel arrangements."
-    ]
-  },
-
-  "kigali-rwanda": {
-    name:"Kigali & Rwanda",
-    region:"Rwanda",
-    image:"https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Discover Rwanda through Kigali city experiences, scenic countryside and selected cultural attractions. Additional excursions can be arranged subject to availability and quotation.",
-    activities:[
-      "Arrive in Kigali and check in at your selected accommodation.",
-      "Explore selected city attractions and cultural experiences.",
-      "Enjoy a planned excursion outside the city.",
-      "Discover more of Rwanda's scenery or enjoy a relaxed day.",
-      "Depart according to your confirmed travel arrangements."
-    ]
-  },
-
-  "dubai-abu-dhabi": {
-    name:"Dubai & Abu Dhabi",
-    region:"United Arab Emirates",
-    image:"https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Experience the UAE through modern city attractions, architecture, shopping and optional desert experiences. Your Dubai and Abu Dhabi itinerary can be customised.",
-    activities:[
-      "Arrive in Dubai and transfer to your selected hotel.",
-      "Explore selected Dubai attractions and city landmarks.",
-      "Enjoy a planned excursion or optional desert experience.",
-      "Discover Abu Dhabi or enjoy more selected city activities.",
-      "Check out and depart according to your arrangements."
-    ]
-  },
-
-  "maldives": {
-    name:"Maldives",
-    region:"Indian Ocean",
-    image:"https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Plan a tropical island escape with ocean scenery, beach relaxation and optional marine experiences. Resort selection, transfers and activities are subject to the final quotation.",
-    activities:[
-      "Arrive in the Maldives and transfer to your selected resort.",
-      "Enjoy a relaxing island and beach experience.",
-      "Explore optional marine activities subject to availability.",
-      "Enjoy leisure time and the resort facilities.",
-      "Check out and transfer for your departure."
-    ]
-  },
-
-  "mauritius-seychelles": {
-    name:"Mauritius & Seychelles",
-    region:"Indian Ocean",
-    image:"https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Enjoy an Indian Ocean island holiday with beautiful coastal scenery, relaxation and optional excursions. The selected island, accommodation and transfers will be confirmed in your quotation.",
-    activities:[
-      "Arrive at your selected island and transfer to your accommodation.",
-      "Enjoy beach relaxation and explore the local surroundings.",
-      "Take an optional island excursion subject to availability.",
-      "Enjoy another day of leisure or selected activities.",
-      "Check out and depart."
-    ]
-  },
-
-  "cape-town": {
-    name:"Cape Town",
-    region:"South Africa",
-    image:"https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Discover Cape Town's beautiful scenery, city attractions, coastline and surrounding experiences. Selected sightseeing and accommodation can be arranged to suit your plans.",
-    activities:[
-      "Arrive in Cape Town and check in at your selected hotel.",
-      "Explore selected city attractions and landmarks.",
-      "Enjoy a scenic excursion around the Cape Peninsula.",
-      "Discover more local attractions or enjoy a leisure day.",
-      "Check out and depart."
-    ]
-  },
-
-  "bangkok": {
-    name:"Bangkok",
-    region:"Thailand",
-    image:"https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Explore Bangkok's lively city atmosphere, cultural landmarks, markets and selected attractions. Your itinerary can include sightseeing and optional excursions.",
-    activities:[
-      "Arrive in Bangkok and transfer to your selected accommodation.",
-      "Explore selected city landmarks and cultural attractions.",
-      "Discover local markets and selected city experiences.",
-      "Enjoy an optional excursion or additional sightseeing.",
-      "Check out and depart."
-    ]
-  },
-
-  "greek-islands": {
-    name:"Greek Islands",
-    region:"Greece",
-    image:"https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=85",
-    gallery:[
-      "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
-    ],
-    description:"Experience Greek island scenery, coastal towns, historic attractions and Mediterranean charm. The specific islands, accommodation and transfers will be agreed in your quotation.",
-    activities:[
-      "Arrive at your selected Greek island and check in.",
-      "Explore the island's towns, beaches and local attractions.",
-      "Enjoy an optional island excursion or boat experience.",
-      "Discover another selected attraction or enjoy leisure time.",
-      "Check out and depart."
-    ]
+  "5day": {
+    type: "Extended Holiday",
+    duration: "5 Days / 4 Nights",
+    count: 5
   }
 };
+
+/* Preserve the original Maasai Mara package names and IDs. */
 
 const maraPackages = {
   "mara-3day": {
-    name:"3 Days Mara Safari",
-    type:"Short Escape",
-    duration:"3 Days / 2 Nights",
-    description:"A short safari option for travellers who want to experience the Maasai Mara with a planned transfer, selected accommodation and guided wildlife-viewing opportunities. The final camp or lodge, route and inclusions are agreed in the quotation.",
-    days:[
-      ["Day 1","Travel to the Maasai Mara, arrive at your selected camp or lodge and take an afternoon game drive if timing and park access allow."],
-      ["Day 2","Enjoy planned morning and afternoon game-drive opportunities with your guide, with breaks arranged around the day's route."],
-      ["Day 3","Have breakfast, enjoy a final activity if time allows and begin the return journey."]
-    ]
+    type: "Short Escape",
+    duration: "3 Days / 2 Nights",
+    title: "Maasai Mara Short Safari",
+    description:
+      "A focused three-day Maasai Mara safari with travel to the reserve, selected accommodation and guided wildlife-viewing opportunities.",
+    count: 3
   },
 
   "mara-4day": {
-    name:"4 Days Mara Adventure",
-    type:"Classic Experience",
-    duration:"4 Days / 3 Nights",
-    description:"A classic-length safari with additional time for game drives and a more relaxed stay. Accommodation category, travel arrangements and any conservancy activities are selected and confirmed with your quotation.",
-    days:[
-      ["Day 1","Travel to the Mara and check in at the selected camp or lodge. Take an afternoon game drive if arrival time permits."],
-      ["Day 2","Enjoy a planned morning game drive and an afternoon wildlife-viewing session."],
-      ["Day 3","Explore another agreed area of the reserve or conservancy with your guide."],
-      ["Day 4","Enjoy breakfast and return to your starting point, subject to the confirmed transport plan."]
-    ]
+    type: "Classic Experience",
+    duration: "4 Days / 3 Nights",
+    title: "Maasai Mara Classic Safari",
+    description:
+      "A four-day Maasai Mara safari with additional time for game drives and a more relaxed stay at a selected camp or lodge.",
+    count: 4
   },
 
   "mara-5day": {
-    name:"5 Days Luxury Mara Safari",
-    type:"Extended Holiday",
-    duration:"5 Days / 4 Nights",
-    description:"An extended safari outline for guests who prefer more time in the Mara and a selected lodge or tented-camp experience. The exact property, room type, meals, park or conservancy fees and game-drive schedule are confirmed before booking.",
-    days:[
-      ["Day 1","Travel to the Mara and settle into the selected lodge or tented camp."],
-      ["Day 2","Enjoy guided game-drive opportunities with time to relax at camp between activities."],
-      ["Day 3","Continue wildlife viewing in the agreed safari area."],
-      ["Day 4","Choose another game-drive plan or a camp-based leisure day, depending on the confirmed package."],
-      ["Day 5","Have breakfast and begin the return journey."]
-    ]
-  }
-};
-
-const packageOptions = {
-  "3day": {
-    type:"Short Escape",
-    duration:"3 Days / 2 Nights",
-    days:3
-  },
-  "4day": {
-    type:"Classic Experience",
-    duration:"4 Days / 3 Nights",
-    days:4
-  },
-  "5day": {
-    type:"Extended Holiday",
-    duration:"5 Days / 4 Nights",
-    days:5
+    type: "Extended Holiday",
+    duration: "5 Days / 4 Nights",
+    title: "Maasai Mara Extended Safari",
+    description:
+      "An extended five-day Maasai Mara safari with more time for wildlife viewing and relaxation at your selected accommodation.",
+    count: 5
   }
 };
 
 const params = new URLSearchParams(window.location.search);
-const key = params.get("deal") || "mara-3day";
-const requestedCurrency = params.get("currency") || "KES";
 
-let destinationSlug = "";
-let destination = null;
-let packageData = null;
+const dealId = params.get("deal") || "mara-3day";
 
-if (maraPackages[key]) {
-  destinationSlug = "maasai-mara";
-  destination = destinations[destinationSlug];
-  packageData = maraPackages[key];
-} else {
-  const match = key.match(/^(.+)-(3day|4day|5day)$/);
+const match = dealId.match(/^(.+)-(3day|4day|5day)$/);
 
-  if (match && destinations[match[1]] && packageOptions[match[2]]) {
-    destinationSlug = match[1];
-    destination = destinations[destinationSlug];
+const destinationSlug = dealId.startsWith("mara-")
+  ? "maasai-mara"
+  : match
+    ? match[1]
+    : "";
 
-    const option = packageOptions[match[2]];
+const destination = destinations.find(function(item) {
+  return item.slug === destinationSlug;
+});
 
-    packageData = {
-      name: option.days + " Days " + destination.name + " Holiday",
-      type: option.type,
-      duration: option.duration,
-      description: destination.description + " This " + option.duration +
-        " package is a suggested holiday outline. The accommodation, transport, activities and final arrangements will be confirmed in your quotation.",
-      days: []
-    };
+const selectedPackage =
+  maraPackages[dealId] ||
+  (match ? packageOptions[match[2]] : null);
 
-    for (let i = 0; i < option.days; i++) {
-      const activity = destination.activities[
-        Math.min(i, destination.activities.length - 1)
-      ];
-
-      packageData.days.push(["Day " + (i + 1), activity]);
-    }
-  }
-}
+const isMaraPackage = Boolean(maraPackages[dealId]);
 
 const title = document.getElementById("package-title");
-const subtitle = document.getElementById("package-subtitle");
-const photo = document.getElementById("package-photo");
-const description = document.getElementById("package-description");
+
 const itinerary = document.getElementById("package-itinerary");
-const currencySelect = document.getElementById("currency");
-const currencyNote = document.getElementById("currency-note");
-const enquire = document.getElementById("enquire");
-const whatsapp = document.getElementById("whatsapp-enquire");
-const back = document.getElementById("back-deals");
 
-if (!destination || !packageData) {
-  document.title = "Package Not Found | Linet Tours & Travel";
-  title.textContent = "Package Not Found";
-  subtitle.textContent = "Please return to our tours page and select a destination.";
-  description.textContent = "We could not find the package you requested.";
-  itinerary.innerHTML = '<p><a href="tours.html">Browse all destinations</a></p>';
-  photo.style.display = "none";
-  document.querySelector(".package-gallery").style.display = "none";
-  document.getElementById("price").textContent = "Please select a valid package";
-  back.href = "tours.html";
-} else {
-  document.title = packageData.name + " | Linet Tours & Travel";
-  title.textContent = packageData.name;
-  subtitle.textContent = packageData.duration + " • " + destination.name + ", " + destination.region;
+function categoryDescription(category) {
 
-  photo.src = destination.image;
-  photo.alt = destination.name + " holiday";
-
-  document.getElementById("gallery-one").src = destination.gallery[0];
-  document.getElementById("gallery-two").src = destination.gallery[1];
-  document.getElementById("gallery-three").src = destination.gallery[2];
-
-  description.textContent = packageData.description;
-
-  document.getElementById("duration").textContent = packageData.duration;
-  document.getElementById("destination-name").textContent = destination.name;
-  document.getElementById("package-type").textContent = packageData.type;
-
-  itinerary.innerHTML = packageData.days.map(day =>
-    '<div class="package-day"><strong>' + day[0] + '</strong>' + day[1] + '</div>'
-  ).join("");
-
-  const dealsUrl = "destination-deals.html?destination=" +
-    encodeURIComponent(destinationSlug);
-
-  document.getElementById("breadcrumb-deals").href = dealsUrl;
-  document.getElementById("breadcrumb-deals").textContent = destination.name + " deals";
-  back.href = dealsUrl;
-
-  currencySelect.value = requestedCurrency === "USD" ? "USD" : "KES";
-
-  function updateCurrency() {
-    const selected = currencySelect.value;
-
-    currencyNote.textContent = selected === "USD"
-      ? "Your quotation will be prepared in US dollars."
-      : "Your quotation will be prepared in Kenyan shillings.";
-
-    const enquiryMessage = "Hello Linet Tours & Travel. I would like to enquire about " +
-      packageData.name + " in " + destination.name +
-      ". Duration: " + packageData.duration +
-      ". Preferred quotation currency: " + selected + ".";
-
-    whatsapp.href = "https://wa.me/254726826529?text=" +
-      encodeURIComponent(enquiryMessage);
-
-    enquire.href = "contact.html?service=" +
-      encodeURIComponent(packageData.name) +
-      "&destination=" + encodeURIComponent(destination.name) +
-      "&currency=" + encodeURIComponent(selected) + "#booking";
+  if (category === "Kenya") {
+    return "KENYA DOMESTIC PACKAGE: This holiday covers travel within Kenya. Local transfers, accommodation and activities are confirmed in your quotation.";
   }
 
-  currencySelect.addEventListener("change", updateCurrency);
-  updateCurrency();
+  if (category === "East Africa") {
+    return "EAST AFRICA REGIONAL PACKAGE: This holiday involves travel within the East African region. Cross-border transport, entry requirements and other arrangements must be checked and confirmed.";
+  }
+
+  return "INTERNATIONAL PACKAGE: This holiday involves overseas travel. Flights, entry requirements, accommodation, transfers and excursions are confirmed separately unless expressly included in your quotation.";
 }
 
-document.querySelectorAll("[data-year]").forEach(el => {
-  el.textContent = new Date().getFullYear();
-});
+function showPackageError() {
+
+  document.title = "Package Not Found | Linet Tours & Travel";
+
+  title.textContent = "Package Not Found";
+
+  document.getElementById("package-subtitle").textContent =
+    "We could not find the selected holiday package.";
+
+  document.getElementById("package-description").textContent =
+    "Please return to the destinations page and choose one of the available packages.";
+
+  document.getElementById("package-photo").style.display = "none";
+
+  document.querySelector(".package-gallery").style.display = "none";
+
+  itinerary.innerHTML =
+    '<a href="tours.html">Browse all destinations</a>';
+
+}
+
+function displayPackage() {
+
+  if (!destination || !selectedPackage) {
+    showPackageError();
+    return;
+  }
+
+  const packageName = isMaraPackage
+    ? selectedPackage.title
+    : destination.name + " " + selectedPackage.type;
+
+  document.title =
+    packageName + " | Linet Tours & Travel";
+
+  title.textContent = packageName;
+
+  document.getElementById("package-subtitle").textContent =
+    selectedPackage.duration + " • " + destination.region;
+
+  document.getElementById("package-photo").src =
+    destination.images[0];
+
+  document.getElementById("package-photo").alt =
+    destination.name + " holiday";
+
+  document.getElementById("gallery-one").src =
+    destination.images[0];
+
+  document.getElementById("gallery-two").src =
+    destination.images[1];
+
+  document.getElementById("gallery-three").src =
+    destination.images[2];
+
+  document.getElementById("package-description").textContent =
+    (isMaraPackage
+      ? selectedPackage.description
+      : destination.description) +
+    " This is a suggested " +
+    selectedPackage.duration +
+    " programme. Final arrangements are confirmed in your personalised quotation.";
+
+  document.getElementById("travel-category").textContent =
+    categoryDescription(destination.category);
+
+  document.getElementById("category-tag").textContent =
+    destination.category + " Holiday";
+
+  document.getElementById("destination-name").textContent =
+    destination.name;
+
+  document.getElementById("duration").textContent =
+    selectedPackage.duration;
+
+  document.getElementById("package-type").textContent =
+    selectedPackage.type;
+
+  /*
+    Display only the itinerary days corresponding
+    to the selected package duration.
+  */
+
+  itinerary.innerHTML = destination.itinerary
+    .slice(0, selectedPackage.count)
+    .map(function(day, index) {
+
+      return `
+        <div class="package-day">
+          <strong>Day ${index + 1}</strong>
+          ${day}
+        </div>
+      `;
+
+    }).join("");
+
+  /*
+    Return link to the correct destination's deals.
+  */
+
+  const dealsUrl =
+    "destination-deals.html?destination=" +
+    encodeURIComponent(destination.slug);
+
+  document.getElementById("breadcrumb-deals").href =
+    dealsUrl;
+
+  document.getElementById("breadcrumb-deals").textContent =
+    destination.name + " Deals";
+
+  document.getElementById("back-deals").href =
+    dealsUrl;
+
+  /*
+    Currency preference.
+    This changes the requested quotation currency,
+    not the package price.
+  */
+
+  const currency = document.getElementById("currency");
+
+  currency.value =
+    params.get("currency") === "USD" ? "USD" : "KES";
+
+  function updateEnquiry() {
+
+    const selectedCurrency = currency.value;
+
+    document.getElementById("currency-note").textContent =
+      selectedCurrency === "USD"
+        ? "Your quotation preference is US dollars. No automatic currency conversion is applied."
+        : "Your quotation preference is Kenyan shillings. Prices are confirmed after an enquiry.";
+
+    const message =
+      "Hello Linet Tours & Travel. I would like to enquire about " +
+      packageName +
+      " in " +
+      destination.name +
+      ". Duration: " +
+      selectedPackage.duration +
+      ". Preferred quotation currency: " +
+      selectedCurrency +
+      ". Please send me the package details and quotation.";
+
+    document.getElementById("whatsapp-enquire").href =
+      "https://wa.me/254726826529?text=" +
+      encodeURIComponent(message);
+
+    document.getElementById("enquire").href =
+      "contact.html?service=" +
+      encodeURIComponent(packageName) +
+      "&destination=" +
+      encodeURIComponent(destination.name) +
+      "&currency=" +
+      encodeURIComponent(selectedCurrency) +
+      "#booking";
+
+  }
+
+  currency.addEventListener("change", updateEnquiry);
+
+  updateEnquiry();
+
+}
+
+document.getElementById("current-year").textContent =
+  new Date().getFullYear();
+
+displayPackage();
 </script>
 
 </body>
